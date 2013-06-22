@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES := \\
     $OUTDIR/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \\
     $OUTDIR/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \\
     $OUTDIR/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so
+    
+# Copy the charger binary in the ramdisk
+PRODUCT_COPY_FILES := \\
+    $OUTDIR/proprietary/charger:root/charger
 
 PRODUCT_COPY_FILES += \\
 EOF

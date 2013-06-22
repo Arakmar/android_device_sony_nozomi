@@ -37,13 +37,8 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh \
    $(LOCAL_PATH)/prebuilt/hw_config.sh:system/etc/hw_config.sh
 
-# USB function switching
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/init.semc.service.rc:root/init.semc.service.rc \
-   $(LOCAL_PATH)/config/init.semc.usb.rc:root/init.semc.usb.rc
-
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/fstab.semc:root/fstab.semc
+   $(LOCAL_PATH)/config/fstab.msm8660:root/fstab.msm8660
 
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab \
